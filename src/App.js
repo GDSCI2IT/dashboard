@@ -1,5 +1,4 @@
-import ColChart from "./components/C-chart";
-import DonutChart from "./components/DonutChart";
+import Chart from "./components/Chart"
 import Head from "./components/Head";
 import Income from "./components/Income";
 import Navbar from "./components/Navbar";
@@ -11,14 +10,13 @@ function App() {
   return (
     <div className="flex">
       <Navbar />
-      <div className="p-8 bg-[#fafafa] w-72" >
+      <div className="p-8 bg-[#fafafa] w-96" >
         <Head />
         <Recents />
       </div>
       <div className="p-12 w-3/6">
         <Income />
-        <ColChart />
-        <DonutChart />
+        <Chart/>
       </div>
       <Retirement />
     </div>

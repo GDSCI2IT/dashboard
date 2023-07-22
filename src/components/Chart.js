@@ -1,0 +1,38 @@
+import React from 'react'
+import ColChart from "./C-chart";
+import Donut from './DonutChart'
+const Chart = () => {
+    return (
+        <div>
+            <h1 className='text-lg font-semibold py-4 pt-7'>Contribution Overtime</h1>
+            <ColChart />
+            <div>
+                <h1 className='text-lg font-semibold'>How do I compare to my peers?</h1>
+                <p className='text-[#a7a7a7] text-sm'>These numbers represent current goal achievement</p>
+                <div className='flex'>
+                    <div>
+                        <div>
+                            <p className='pb-2'><b>Age:</b> Under 30</p>
+                            <hr className='h-1 border-solid border-t-2 border-[#f5f5f5] p-2 ' />
+                        </div>
+                        <div>
+                            <p className='pb-2'><b>Salary:</b> K 20 - K 30</p>
+                            <hr className='h-1 border-solid border-t-2 border-[#f5f5f5] p-2 ' />
+                        </div>
+                        <div>
+                            <p className='pb-2'><b>Gender:</b> Male</p>
+                            <hr className='h-1 border-solid border-t-2 border-[#f5f5f5] p-2 ' />
+                        </div>
+                    </div>
+                    <div className='ml-5 flex gap-5'>
+                        <Donut data={[78, 22]} />
+                        <Donut data={[95, 5]} />
+                        <Donut data={[59, 41]} />
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Chart

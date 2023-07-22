@@ -1,11 +1,42 @@
 import React from 'react'
 
-const DonutChart = () => {
+import ReactApexChart from "react-apexcharts";
+
+const Donut = ({data}) => {
+    const colors = ['#22d6aa', '#d3f7ee']
   return (
-    <div>
-      DonutChart
-    </div>
+    <ReactApexChart
+        options={{
+          chart: { type: 'donut' },
+          colors: colors,
+          legend: { show: false },
+          dataLabels: { enabled: false },
+          plotOptions: {
+            pie: {
+              donut: {
+                labels: {
+                  show: true,
+                  total: {
+                    showAlways: true,
+                    show: false, // Hide the total value
+                  },
+
+                }
+              
+              },
+            offsetX:0,
+            offsetY:0
+            },
+      
+          },
+        }}
+        
+        series={data}
+        type="donut"
+        height="125px"
+        width="100px"
+      />
   )
 }
 
-export default DonutChart
+export default Donut;

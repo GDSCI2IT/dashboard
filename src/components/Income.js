@@ -5,7 +5,7 @@ const Income = () => {
     <div className='space-y-5'>
       <div>
         <h5 className='text-[#5441ff] font-semibold'>Retirement Income</h5>
-        <h1 className='text-xl font-semibold'>Starting Year 2056</h1>
+        <h1 className='text-xl font-bold'>Starting Year 2056</h1>
       </div>
       <div className='grid grid-cols-3 space-x-4 '>
         <div className='flex flex-col'>
