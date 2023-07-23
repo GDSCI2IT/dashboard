@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className='fixed bottom-0 left-0 rounded-md w-screen bg-[#ffffff] z-10 sm:w-16 sm:h-screen sm:flex-col sm:justify-between p-4'>
       {/* Navbar for small screens */}
       <div className='flex px-2 sm:hidden justify-between'>
-        <span><img className='w-5 pb-3' src={home} alt="home" /></span>
+        <span><img className='w-5  pb-3' src={home} alt="home" /></span>
         <span><img className='w-5 pb-3' src={card} alt="card" /></span>
         <span><img className='w-5 pb-3' src={todo} alt="todo" /></span>
         <span><img className='w-5 pb-3' src={profile} alt="profile" /></span>
