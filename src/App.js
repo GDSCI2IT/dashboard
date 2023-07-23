@@ -10,11 +10,11 @@ function App() {
   return (
     <div className="flex flex-col sm:flex-row">
       <Navbar />
-      <div className="p-8 bg-[#fafafa] w-80" >
+      <div className="p-8 sm:ml-16 space-y-5 sm:bg-[#fafafa] w-screen sm:w-80" >
         <Head />
         <Recents />
       </div>
-      <div className="p-12 w-3/6">
+      <div className="p-8 w-screen sm:w-3/6">
         <Income />
         <Chart/>
       </div>

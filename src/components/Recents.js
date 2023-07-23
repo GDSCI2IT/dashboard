@@ -2,7 +2,7 @@ import React from 'react'
 
 const Recents = () => {
   return (
-    <div>
+    <div className='bg-[#fafafa] p-5 rounded-3xl'>
         <h1 className='font-bold text-md my-5'>Recent Transaction</h1>
         <div className='space-y-1'>
           <p className='text-sm text-[#a7a7a7]' >2020-08-07</p>

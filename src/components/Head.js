@@ -12,10 +12,10 @@ const Head = () => {
           <p className='text-sm text-[#101010]'>welcome back</p>
         </div>
       </div>
-      <div className='space-y-4'>
-        <h1 className='font-bold text-[#434343]'>Today</h1>
-        <div>
-          <span className='font-bold text-2xl'>$19,892</span>
+      <div className=' grid grid-cols-2 space-y-4 bg-[#fafafa] p-5 rounded-3xl'>
+        <h1 className='font-bold col-span-2 text-[#434343]'>Today</h1>
+        <div className='col-span-2'>
+          <span className='font-bold text-4xl sm:text-2xl'>$19,892</span>
           <p className='text-sm text-[#757575]'>Account Balance</p>
         </div>
         <div>
@@ -26,9 +26,9 @@ const Head = () => {
           <span className='font-bold text-md'>$1888</span>
           <p className='text-sm text-[#a7a7a7]'>Total Intrest</p>
         </div>
-        <button className='bg-[#4935ff] text-[#ebe8ff] w-1/2 py-2 rounded-md'>I want to ▼</button>
+        <button className='col-span-2 bg-[#4935ff] text-[#ebe8ff]  sm:m-0 w-auto sm:w-1/2 h-14 py-2 rounded-lg'>I want to ▼</button>
       </div>
-      
+
     </div>
   )
 }
