@@ -8,9 +8,9 @@ import Retirement from "./components/Retirement";
 
 function App() {
   return (
-    <div className="flex">
+    <div className="flex flex-col sm:flex-row">
       <Navbar />
-      <div className="p-8 bg-[#fafafa] w-96" >
+      <div className="p-8 bg-[#fafafa] w-80" >
         <Head />
         <Recents />
       </div>
