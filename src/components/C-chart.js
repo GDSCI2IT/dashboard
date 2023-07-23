@@ -45,7 +45,6 @@ const ColChart = () => {
           legend: {
             position: 'top',
             formatter: (str, data) => {
-              console.log(str, data)
               let index = data.seriesIndex;
               return `${str} : <b>K ${dataSum(index)}</b>`
             },
@@ -61,10 +60,9 @@ const ColChart = () => {
             enabled: false
           },
           yaxis: {
-            // Customize the labels on the y-axis here
+            
             labels: {
               formatter: function (value) {
-                // You can customize the label format as per your requirement
                 return `$${value}`;
               },
 

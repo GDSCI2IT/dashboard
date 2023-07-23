@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import SliderComponent from './SliderComponent';
 const Retirement = () => {
 
   const [range, setRange] = useState({
