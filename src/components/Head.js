@@ -26,7 +26,7 @@ const Head = () => {
           <span className='font-bold text-md'>$1888</span>
           <p className='text-sm text-[#a7a7a7]'>Total Intrest</p>
         </div>
-        <button className='col-span-2 bg-[#4935ff] text-[#ebe8ff]  sm:m-0 w-auto sm:w-1/2 h-14 py-2 rounded-lg'>I want to ▼</button>
+        <button className='col-span-2 bg-[#4935ff] text-[#ebe8ff]  sm:m-0 w-auto sm:w-1/2 h-14 sm:h-11 py-2 rounded-lg'>I want to ▼</button>
       </div>
 
     </div>

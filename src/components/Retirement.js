@@ -21,16 +21,16 @@ const Retirement = () => {
         <h1 className='text-lg font-semibold'>Retirement Strategy</h1>
         <div className='space-y-2'>
           <h2 className='font-semibold'>Employee Contribution</h2>
-          <div className='flex space-x-2'>
-          <SliderComponent max={100} min={0} step={1} value={range.range1} key={"range1"} handleChange={(e)=>{changeHandler(e)}} />
-            <span><b>{range.range1}%</b></span>
+          <div className='flex space-x-2 items-center'>
+            <input className='w-60' type="range" min={1} max={100} onChange={(e) => { changeHandler(e) }} name='range1' />
+            <span className='bg-[#ffffff] p-2 rounded-md'><b>{range.range1}%</b></span>
           </div>
         </div>
         <div>
           <h2 className='font-semibold' >Retirement Age</h2>
-          <div className='flex space-x-2'>
-            <SliderComponent max={100} min={0} step={1} value={range.range2} handleChange={(e)=>{changeHandler(e)}} />
-            <span><b>{range.range2}</b></span>
+          <div className='flex space-x-2 items-center'>
+            <input className='w-52' type="range" min={1} max={100} onChange={(e) => { changeHandler(e) }} name='range2' />
+            <span className='bg-[#ffffff] p-2 rounded-md' ><b>{range.range2}</b></span>
           </div>
         </div>
         <hr className='h-1 border-solid border-t-2 border-[#f5f5f5] p-2 ' />

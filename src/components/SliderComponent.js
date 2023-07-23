@@ -25,7 +25,7 @@ const Container = styled.div`
 
 const Slider = styled.input`
   -webkit-appearance: none;
-  width: 100%;
+  width: 100px;
   height: 4px;
   border-radius: 4px;
 
@@ -38,7 +38,7 @@ const Slider = styled.input`
   ::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 16px;
+    width: 36px;
     height: 16px;
     border-radius: 50%;
     background: #3a7bec;
@@ -47,7 +47,7 @@ const Slider = styled.input`
   }
 
   ::-moz-range-thumb {
-    width: 16px;
+    width: 36px;
     height: 16px;
     border-radius: 50%;
     background: #3a7bec;

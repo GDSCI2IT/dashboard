@@ -26,7 +26,7 @@ const Navbar = () => {
           <span><img className='w-7' src={butterfly} alt="logo" /></span>
           <span><img className='w-7' src={search} alt="search bar" /></span>
         </div>
-          <div className='flex flex-col  space-y-8 '>
+        <div className='flex flex-col  space-y-8 '>
           <span><img className='w-7' src={home} alt="home" /></span>
           <span><img className='w-7' src={card} alt="card" /></span>
           <span><img className='w-7' src={todo} alt="todo" /></span>
@@ -36,6 +36,10 @@ const Navbar = () => {
           <span><img className='w-7' src={notification} alt="notification" /></span>
           <span><img className='w-7' src={exit} alt="exit" /></span>
         </div>
+      </div>
+      {/*top part*/}
+      <div className='fixed top-1 right-1 flex px-2 sm:hidden '>
+        <span><img className='w-7' src={notification} alt="notification" /></span>
       </div>
     </nav>
   );

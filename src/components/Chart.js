@@ -25,9 +25,18 @@ const Chart = () => {
                         </div>
                     </div>
                     <div className='ml-5 flex sm:pt-3 gap-4 sm:gap-10'>
-                        <Donut data={[78, 22]} />
-                        <Donut data={[95, 5]} />
-                        <Donut data={[59, 41]} />
+                        <div className='flex flex-col items-center'>
+                            <Donut data={[78, 22]} />
+                            <span>Average</span>
+                        </div >
+                        <div className='flex flex-col items-center'>
+                            <Donut data={[95, 5]} />
+                            <p>Top</p>
+                        </div>
+                        <div className='flex flex-col items-center'>
+                            <Donut data={[59, 41]} />
+                            <p>Me</p>
+                        </div>
                     </div>
                 </div>
             </div>
