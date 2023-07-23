@@ -10,7 +10,7 @@ import exit from "../icons/exit.png";
 
 const Navbar = () => {
   return (
-    <nav className='fixed bottom-2 left-0 rounded-md w-screen bg-[#ffffff] z-10 sm:w-16 sm:h-screen sm:flex-col sm:justify-between p-4'>
+    <nav className='fixed bottom-0 left-0 rounded-md w-screen bg-[#ffffff] z-10 sm:w-16 sm:h-screen sm:flex-col sm:justify-between p-4'>
       {/* Navbar for small screens */}
       <div className='flex px-2 sm:hidden justify-between'>
         <span><img className='w-5 pb-3' src={home} alt="home" /></span>
